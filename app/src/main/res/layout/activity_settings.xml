@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/editTextInput"
+            android:layout_width="387dp"
+            android:layout_height="184dp"
+            android:hint="Введите текст" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Размер текста" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical">
+
+            <SeekBar
+                android:id="@+id/seekTextSize"
+                android:layout_width="323dp"
+                android:layout_height="30dp"
+                android:layout_weight="1" />
+
+            <TextView
+                android:id="@+id/textSizeValue"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:gravity="center" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Цвет" />
+
+        <RadioGroup
+            android:id="@+id/radioColors"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/radioRed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Красный"
+                android:textColor="#FF0000"/>
+
+            <RadioButton
+                android:id="@+id/radioBlue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Синий"
+                android:textColor="#0000FF"/>
+
+            <RadioButton
+                android:id="@+id/radioGreen"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Зелёный"
+                android:textColor="#00FF00"/>
+        </RadioGroup>
+
+        <CheckBox
+            android:id="@+id/checkBold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Жирный"
+            android:textStyle="bold"/>
+
+        <CheckBox
+            android:id="@+id/checkItalic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Курсив"
+            android:textStyle="italic"/>
+        <Button
+            android:id="@+id/buttonShow"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Показать"
+            android:layout_marginTop="24dp" />
+
+    </LinearLayout>
+</ScrollView>
